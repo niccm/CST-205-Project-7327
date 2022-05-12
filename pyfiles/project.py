@@ -7,7 +7,7 @@ Teammates: Nick Mederos, Vicente Valencia & team number 7327
 CST205-01_SP22: Multimedia Design & Progmng
 """
 from flask import Flask, render_template, url_for
-from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap4
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -17,8 +17,6 @@ bootstrap = Bootstrap(app)
 def home():
   return render_template('index.html')
 
-
-# Get im id after page2/
 # Page 2
 @app.route('/image1')
 def page2func(image_id):
